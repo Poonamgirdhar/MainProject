@@ -1,0 +1,57 @@
+{{!-- <style>
+    #info{color: red ;}
+</style>
+
+
+<section>
+<h4> Using components </h4>
+ <input type="form" value="Send"/>
+ <br><br>
+ <b>Info:</b> <span id="info"> {{title}}</span>
+
+ </section> --}}
+<h2> Add a new Question </h2>
+
+Your Question:{{input value=title}}
+<br>
+
+Name:{{input value=isbn}}
+<br>
+
+Avatar URL:
+{{input value=pages}}
+<br>
+
+Additional Notes:
+{{input value=description}}
+
+
+{{!-- Additional Notes:<br>
+{{input value=firstName}} --}}
+<br>
+{{!-- 
+Last Name:<br>
+{{input value=lastName}}
+<br>
+
+Bio:<br>
+{{input value=bio}}
+
+<h6> Enter Publisher Detail </h6>
+
+Name:<br>
+{{input value=name}}
+<br>
+
+Organization Name:<br>
+{{input value=organizationName}}
+<br>
+Address:<br>
+{{input value=address}} --}}
+
+
+<br><br><br>
+<button {{action 'createBook'}}>Post Question</button>
+
+
+{{yield}}
